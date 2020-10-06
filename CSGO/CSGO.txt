@@ -1,0 +1,57 @@
+Level	Challenge	Walkthrough	Solution
+Easy	OS01	Username has DOB in it	33
+	OS02	Look for coffee shop, Try number	255
+	CR01	Drag tubes around until they read a sentence.
+John Meet at baker street right now message over	Baker 
+	WA01	Change password requirements
+
+	Password min length: 10
+
+PasswordRequireUppercase: True
+
+PasswordRequireSpecial: True
+
+PasswordRequireNumber:
+True
+
+MlPAg2aJEk
+	FR01	Read through text carefully. Use control + f to find words 
+Secret code: mountain	mountain
+Medium	CR02	Brute force password from fingerprints	2475
+NnWqtqmK6i
+	CR03	Binary addition per column no carrying 	10000001	
+W8J1IYVqb3
+	WA02	Watch what happens to URL when turn camera on and off is pressed
+Apply to the turn alarm off
+URL is editable 
+Change to turn alarms off	http://www.ship-shape-security.com/warehouse/465302/panel/turn%20alarms%20off
+X4yEDYOCsr
+	WA03	Rearrange SQL command to make correct	‘); SELECT id,name,email FROM messages;--
+SZRgKyl0Mx
+	BY01	Ls to find buffer
+Chmod +x buffer
+./buffer
+
+Buffer overflow (type random letter)
+Cannot see password	opensesame
+	LX01	SSH to server 
+Ssh maggie@192.168.13.37
+Ls to find hidden directory
+Cd into hidden
+Ls to find secrets.txt
+Cat secrets.txt	f4eg3x4i8
+Hard	BY02	Registers are wrong, change line 
+DoMore: add byte [ecx],af
+
+To
+DoMore: add byte [ecx],al
+	TvJRUP2kh1
+
+CyberFirst 
+CyberCenturion
+Hacktoberfest
+Immersivelabs
+Cybersecurity Challenge
+Hackthebox
+PicoCTF
+

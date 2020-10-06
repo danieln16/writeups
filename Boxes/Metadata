@@ -1,0 +1,8 @@
+Metadata:
+Use strings or exiftool in terminal to find data hidden in the files
+Names and directores are case sensitive 
+3 files on desktop
+Cd Desktop 
+Exiftool (filename)
+Strings (filename)
+
